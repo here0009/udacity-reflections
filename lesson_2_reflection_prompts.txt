@@ -1,44 +1,30 @@
-How did viewing a diff between two versions of a file help you see the bug that
-was introduced?
+What happens when you initialize a repository? Why do you need to do it?
+	I think it will creat a repository to store the informations about the files in the repository.
 
-    I think usually the last version is correctly running, through editing, we may introduce some bugs, find the editing postion help us to spot these bugs.
+How is the staging area different from the working directory and the repository?
+	It can be seen as a hub between the working directory and the repository, once we had made some changes in the working directory, we can separate these changes in the working direcory, and make different commits according to the logic units of these changes.
 
-How could having easy access to the entire history of a file make you a more
-efficient programmer in the long term?
+What value do you think it offers?
+	Well, with the staging area, you can manipulate the changes in different files more easily. You can combine or separate these change more convienient.
+
+How can you use the staging area to make sure you have one commit per logical
+change?
+	I will add the changes that belongs to one logcial change to the staging area together, and commit them as a logical change.
+
+What are some situations when branches would be helpful in keeping your history
+organized? How would branches help?
+	If you want to do something experimental, or somehow independent change from the mainstream, I think using branch will be a good idea. 
+	Branches help us to get a clearly infrastructure of the whole project, and it can be easily to specify different branches.
+
+How do the diagrams help you visualize the branch structure?
+	The diagrams show the branch structure directly, so it is easy to see the orgnization of the branch structure.
 	
-	I think it help us to remember what we have done, and help us to debug. 
-    
+What is the result of merging two branches together? Why do we represent it in
+the diagram the way we do?
+	It will delete the branch label of one branch.
+	Using the diagram, it is easy to visulize the relationships between different commits.
 
-What do you think are the pros and cons of manually choosing when to create a
-commit, like you do in Git, vs having versions automatically saved, like Google
-docs does?
-
-    Versions automatically saved,
-    Pros : it is easy to recover to a specific time not very long ago.
-    Cons : the saved frequency may not suitable for the user, besides, it did not have a specific theme for the changes.
-
-    Manually choosing when to create a commit,
-    Pros : every commit got a theme, it is easy for review.
-    Cons : sometime you may forget to commit. 
-
-Why do you think some version control systems, like Git, allow saving multiple
-files in one commit, while others, like Google Docs, treat each file separately?
-
-    Well, I think Git mainly used in coding, so there are lots of links between different files in a coding project. Others, the links between different files is less ferequent than programming project.
-
-How can you use the commands git log and git diff to view the history of files?
-
-    Use the command git log or git log --stat to browse the changes in files. Find the specific change in the log , use the command git [first commit] [second commit] to see the changes.
-
-How might using version control make you more confident to make changes that
-could break something?
-
-    Because I can go back to the versions that could work, so I am more confident to make changes that can possibly break something. 
-
-Now that you have your workspace set up, what do you want to try using Git for?
-
-    D:\Programtool\Sublime Text 2
-
-git config --global core.editor "'D:/Programtool/Sublime Text 2/sublime_text.exe' -n -w"
-git config --global push.default upstream
-git config --global merge.conflictstyle diff3
+What are the pros and cons of Git’s automatic merging vs. always doing merges
+manually?
+	Git's automatic merging is more faster, more convinient than manally mergeing, and it help you to compare the two mergeing files.
+	When there are lots of confilictions, I think it is better to do it manually.
